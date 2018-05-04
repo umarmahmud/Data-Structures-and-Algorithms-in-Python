@@ -1,12 +1,14 @@
 class Stack:
     def __init__(self):
         self.items = []
-
-    def push(self):
-        pass
-
+        
+    def push(self, item):
+        self.items.append(item)
+        
     def pop(self):
-        pass
+        self.items.remove(self.items[len(self.items) - 1])
 
     def peek(self):
-        pass
+        return self.items[len(self.items) - 1]
+
+        
